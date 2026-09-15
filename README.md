@@ -59,7 +59,7 @@ What I used:
 
 ### Web apps I built
 #### GeekBall
-GeekBall is a lightweight prediction game built around football matches. The idea came from wanting a daily game that feels as easy as checking the scores, but still gives people a reason to come back and compete with friends or strangers. Users pick match outcomes before kick-off, earn points for correct predictions, and climb a leaderboard over time. The motivation behind it was simple: I wanted a prediction game that was low-friction, fast to play, and more accessible than traditional fantasy leagues.
+GeekBall is a lightweight prediction game built around football matches. The idea came from wanting a daily game that feels as easy as checking the scores, but still gives people a reason to come back and compete with friends or strangers. Users pick match outcomes before kick-off, earn points for correct predictions, and climb a leaderboard over time. The motivation behind it was simple: I wanted a prediction game that was low-friction, fast to play, and more accessible than traditional fantasy leagues. Developed a client-server architecture utilizing sports APIs to automate the ingestion of live match schedules, team logos, and live scores, supporting real-time user predictions and dynamic leaderboard rankings.
 GeekBall: [https://geek-ball.web.app/](#)
 
 #### NorthStand
