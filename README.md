@@ -110,6 +110,8 @@ What I used:
 - pandas for processing input data and summarising system behaviour
 - Matplotlib for visualising congestion patterns and performance metrics
 
+In addition, I co-authored, in a team of 8, a modernisation strategy for ATOM, Turkish Airlines' flight operations control platform: proposed a phased Strangler Fig migration from a Java monolith to domain-based microservices, with parallel running and rollback at each stage, Kafka-driven real-time updates, and centralised monitoring (Prometheus, Grafana, OpenTelemetry)
+
 ### ProxoLab
 My internship at ProxoLab gave me my first real exposure to a large-scale fintech application with real users, real money, and a production codebase that had already accumulated years of complexity. It was a very different environment from university work because the cost of mistakes was much higher.
 
