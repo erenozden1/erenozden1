@@ -106,7 +106,7 @@ One of the more interesting parts of the internship was an airport simulation pr
 
 What I used:
 - Python for modelling and data analysis
-- SimPy for discrete-event simulation of passenger movement and queueing behaviour
+- JavaScript, HTML5 Canvas
 - pandas for processing input data and summarising system behaviour
 - Matplotlib for visualising congestion patterns and performance metrics
 
