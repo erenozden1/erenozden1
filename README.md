@@ -34,7 +34,7 @@ What I used:
 - Flask for the web app backend
 - Render for deployment
 
-Project link: [https://transferscout.onrender.com/](#)
+Project link: [https://transferscout.onrender.com/](#) · Code: https://github.com/erenozden1/transfer-scout
 
 ### The importance of tennis points
 This project was a summer research piece focused on measuring how much each point in a tennis match really matters. The goal was to move beyond intuition and quantify the importance of points by linking game state to the probability of winning the entire match.
@@ -60,7 +60,7 @@ What I used:
 ### Web apps I built
 #### GeekBall
 GeekBall is a lightweight prediction game built around football matches. The idea came from wanting a daily game that feels as easy as checking the scores, but still gives people a reason to come back and compete with friends or strangers. Users pick match outcomes before kick-off, earn points for correct predictions, and climb a leaderboard over time. The motivation behind it was simple: I wanted a prediction game that was low-friction, fast to play, and more accessible than traditional fantasy leagues. Developed a client-server architecture utilizing sports APIs to automate the ingestion of live match schedules, team logos, and live scores, supporting real-time user predictions and dynamic leaderboard rankings.
-GeekBall: [https://geek-ball.web.app/](#)
+GeekBall: [https://geek-ball.web.app/](#) · Code: https://github.com/erenozden1/GeekBall-main
 
 #### NorthStand
 NorthStand was built to solve a very specific social problem: finding or creating a local place to watch a football match with other fans when you are new to a city or just do not know where people gather. The product is meant to make it easier to discover nearby watch parties and connect with people who share the same team loyalty. The motive behind it was personal and practical — I had experienced the frustration of wanting to watch a game with others but having no clear, simple way to find them.
@@ -102,13 +102,19 @@ What I used:
 - Experimental hardware testing and optics comparison to find a cost-effective setup
 - Internal testing workflows to assess accuracy, robustness, and operational feasibility
 
-One of the more interesting parts of the internship was an airport simulation project designed to model passenger flow, queue behaviour, and the impact of different self-service device configurations. The aim was to understand how changes in throughput, waiting times, and staffing assumptions could affect the entire airport experience before making operational decisions.
+· Code: https://github.com/erenozden1/barcode-scanner
+
+One of the more interesting parts of the internship was an airport check-in simulator I built after an observation visit to Sabiha Gökçen Airport. It lets you design a check-in hall on a grid (kiosks, self bag-drop units, staffed counters, tag printers) and simulates passenger flow through it, so layout decisions can be tested in seconds instead of by rearranging a real terminal.
 
 What I used:
-- Python for modelling and data analysis
-- JavaScript, HTML5 Canvas
-- pandas for processing input data and summarising system behaviour
-- Matplotlib for visualising congestion patterns and performance metrics
+
+- Vanilla JavaScript (no framework) for the simulation engine, data model and UI logic
+- HTML5 Canvas for the grid editor, passenger rendering and boarding animation
+- Agent-based, time-stepped simulation: passengers arrive randomly, pick the nearest or shortest-queue station, and abandon after 10 minutes without service
+- Monte Carlo replications: each layout runs several times and results are averaged to separate design effects from random variance
+- Service times per operation sampled from normal distributions; outputs include total time, cost per passenger, abandonment and per-machine utilisation
+
+Live demo: https://airport-sim-demo.netlify.app/ · Code: https://github.com/erenozden1/Airport-Simulator
 
 In addition, I co-authored, in a team of 8, a modernisation strategy for ATOM, Turkish Airlines' flight operations control platform: proposed a phased Strangler Fig migration from a Java monolith to domain-based microservices, with parallel running and rollback at each stage, Kafka-driven real-time updates, and centralised monitoring (Prometheus, Grafana, OpenTelemetry)
 
